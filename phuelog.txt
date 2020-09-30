@@ -1,0 +1,37 @@
+INFO:phue:Attempting to connect to the bridge...
+INFO:phue:Using ip: 192.168.3.3
+INFO:phue:Error opening config file, will attempt bridge registration
+ERROR:phue:POST Request to 192.168.3.3/api timed out.
+Traceback (most recent call last):
+  File "/Users/pips/PycharmProjects/phuelogging/venv/lib/python3.7/site-packages/phue.py", line 746, in connect
+    self.username = config[self.ip]['username']
+KeyError: '192.168.3.3'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/pips/PycharmProjects/phuelogging/venv/lib/python3.7/site-packages/phue.py", line 655, in request
+    connection.request(mode, address, json.dumps(data))
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1277, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1323, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1272, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 1032, in _send_output
+    self.send(msg)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 972, in send
+    self.connect()
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/http/client.py", line 944, in connect
+    (self.host,self.port), self.timeout, self.source_address)
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+INFO:phue:Attempting to connect to the bridge...
+INFO:phue:Using ip: 192.168.2.3
+INFO:phue:Using username from config: 98dlgSIbrSH5J6pEtQutBnBrFOxzXBtXCIISaNjE
+INFO:phue:Attempting to connect to the bridge...
+INFO:phue:Using ip: 192.168.2.3
+INFO:phue:Using username: 98dlgSIbrSH5J6pEtQutBnBrFOxzXBtXCIISaNjE
